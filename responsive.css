@@ -1,0 +1,186 @@
+/*Notebooks and Small Laptops*/
+@media (max-width: 1366px) {
+  #welcome-section .home-header .main-menu__item {
+    font-size: 1em;
+    margin-right: 20px; }
+  #welcome-section .home-header__top-area {
+    height: 14vh; }
+  #our-menu .tab-menu {
+    flex: 0 1 150px; }
+  #our-menu .tab-content {
+    width: 750px; }
+  #our-menu .slide {
+    width: 100%; } }
+
+/*iPad Landscape Mode and Large Tablets */
+@media (max-width: 1024px) {
+  .container_padding {
+    padding: 50px 30px; }
+  .container__block_fixed {
+    flex: 0 1 964px; }
+  .wrapper_1 {
+    flex-wrap: wrap; }
+  #welcome-section .home-header__top-area {
+    background-color: #fff;
+    color: #2E3236;
+    font-size: 0.85rem;
+    z-index: 10000; }
+  #welcome-section .home-header .main-logo {
+    background-image: url("../img/logo_dark.png");
+    width: 140px;
+    height: 40px;
+    align-self: flex-start;
+    order: 2;
+    margin: -5px auto; }
+  #welcome-section .home-header .main-menu__trigger {
+    display: block; }
+  #welcome-section .home-header .main-menu__item {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    border-bottom: 0.5px solid #dedede;
+    font-weight: lighter;
+    line-height: 45px;
+    background-color: #fff; }
+  #welcome-section .home-header .main-menu .shop-cart {
+    position: absolute;
+    top: 40px;
+    right: 35px; }
+    #welcome-section .home-header .main-menu .shop-cart i {
+      font-size: 1.5rem; }
+  #welcome-section .home-header .main-menu > ul:nth-child(1) {
+    color: inherit;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; }
+  #welcome-section .home-header .main-menu__item:hover, #welcome-section .home-header .dropdown-menu__item:hover,
+  #welcome-section .home-header .dropright-menu__item:hover {
+    height: auto;
+    color: #c59d5f; }
+  #welcome-section .home-header .main-menu__item:hover .dropdown-menu__item:first-child,
+  #welcome-section .home-header .dropdown-menu__item:hover .dropright-menu__item:first-child {
+    border-top: 0.5px solid #c59d5f; }
+  #welcome-section .home-header #main-menu__checkbox:checked ~ nav[role="navigation"].main-menu
+ul:nth-child(1) {
+    display: block; }
+  #welcome-section .home-header .dropdown-menu, #welcome-section .home-header .dropright-menu {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    position: static; }
+  #welcome-section .home-header .dropdown-menu__item, #welcome-section .home-header .dropright-menu__item {
+    color: #666;
+    font-size: 0.65rem;
+    border-bottom: 0.5px solid #dedede; }
+    #welcome-section .home-header .dropdown-menu__item:hover, #welcome-section .home-header .dropright-menu__item:hover {
+      background-color: #fff; }
+  #welcome-section .home-header .dropdown-menu__item:last-child,
+  #welcome-section .home-header .dropright-menu__item:last-child {
+    border-bottom: none; }
+  #welcome-section .wrapper_1 {
+    justify-content: center; }
+  #welcome-section .wrapper_1 .container__item {
+    flex: 0 0 360px; }
+  #welcome-section .wrapper_1 .container__item:nth-of-type(2) {
+    flex-basis: 100%;
+    margin-bottom: 50px; }
+  #our-menu .tab-content {
+    width: 600px; }
+  #our-menu .embed-item {
+    width: 600px; }
+  #our-menu .wrapper_1 {
+    flex-wrap: wrap;
+    justify-content: center; }
+  #our-menu .left_bg, #our-menu .right_bg1, #our-menu .right_bg2 {
+    display: none; }
+  .footer-info .column {
+    flex-basis: 48%; }
+  .footer-info .photo {
+    height: 75px;
+    flex-basis: 75px; } }
+
+/*iPad */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px; }
+  .container__item {
+    flex-basis: 100%; }
+  .wrapper_1 .container__item {
+    flex: 0 0 100%;
+    min-height: 450px; }
+  .wrapper_2 {
+    flex-wrap: wrap; }
+  .wrapper_2 .container__item {
+    margin-bottom: 50px; }
+  .wrapper_2 .container__item:last-child {
+    margin-bottom: 0px; }
+  #reservation-section .reserv-form__row {
+    flex-wrap: wrap; }
+  #reservation-section .reserv-form__field {
+    flex: 0 1 100%;
+    margin-right: 0px; }
+  #our-menu .embed-item {
+    width: 550px; }
+  #our-menu .tab-content {
+    width: 550px; }
+    #our-menu .tab-content .slide__desc {
+      width: 230px;
+      height: 100px;
+      top: 20px;
+      right: 10px; }
+      #our-menu .tab-content .slide__desc .text {
+        display: none; }
+  #our-menu .tab-menu {
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: 30px 0px; }
+  .footer-info .column {
+    flex-basis: 100%; } }
+
+/*Medium Smart Phones*/
+@media only screen and (max-width: 576px) {
+  #welcome-section .home-header .main-logo {
+    order: 1; }
+  #welcome-section .home-header .main-menu__trigger {
+    order: 2; }
+  #welcome-section .home-header .shop-cart {
+    display: none; }
+  #welcome-section .home-header .text1, #welcome-section .home-header .text2, #welcome-section .home-header .text3 {
+    font-size: 2rem; }
+  #welcome-section .home-header .welcome-text {
+    flex-basis: 80%;
+    font-size: 1.55rem;
+    padding-right: 50px;
+    padding-left: 50px; }
+  #welcome-section .home-header .small-logo {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  #welcome-section .wrapper_1 .img-responsive {
+    width: 100%; }
+  #welcome-section .wrapper_1 .container__item:nth-of-type(2) {
+    padding: 30px 0px 50px; }
+  #welcome-section .bg-theme {
+    background-size: contain;
+    height: 500px; }
+  #welcome-section .column-wrapper {
+    flex: 0 0 90%; }
+    #welcome-section .column-wrapper * {
+      text-align: center; }
+  #reservation-section .reserv-form__row {
+    flex-flow: row wrap; }
+  #reservation-section .reserv-form__field {
+    flex: 1 1 250px; }
+  #our-menu .tab-content, #our-menu .embed-item {
+    width: 420px; }
+  #our-menu .text-block {
+    flex: 1 0 400px; }
+  #our-menu .text-block {
+    margin-top: 30px; }
+  #latest_news .wrapper_2 .container__item {
+    margin-bottom: 50px; }
+  #latest_news .wrapper_2 .container__item:last-child {
+    margin-bottom: 0px; } }

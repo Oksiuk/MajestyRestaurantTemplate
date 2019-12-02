@@ -1,0 +1,370 @@
+$body-color: #515151;
+$primary-color: #c59d5f;
+$white: #fff;
+$gray-dark: #2E3236;
+$gray: #515151;
+$gray-light: #dedede;
+$dark: #262626;
+
+/*Notebooks and Small Laptops*/
+@media (max-width: 1366px) {
+
+	#welcome-section {
+
+		.home-header {
+			.main-menu__item {
+				font-size: 1em;
+				margin-right: 20px;
+			}
+			&__top-area{
+				height: 14vh;
+			}
+		}
+	}
+	
+	#our-menu {
+
+		.tab-menu {
+			flex: 0 1 150px;
+		}
+
+		.tab-content {
+			width: 750px;
+		}
+
+		.slide {
+			width: 100%;
+		}		
+	}
+}
+
+/*iPad Landscape Mode and Large Tablets */
+@media (max-width: 1024px) {
+
+	.container_padding {
+		padding: 50px 30px;
+	}
+
+	.container__block_fixed {
+		flex: 0 1 964px;		
+	}
+
+	.wrapper_1 {
+		flex-wrap: wrap;
+	}
+
+	#welcome-section {
+
+		.home-header {
+
+			&__top-area {
+				background-color: #fff;
+				color: $gray-dark;
+				font-size: 0.85rem;
+				z-index: 10000;
+			}
+
+			.main-logo {
+				background-image: url('../img/logo_dark.png');
+				width: 140px;
+				height: 40px; 
+				align-self: flex-start;
+				order: 2;
+				margin: -5px auto;
+			}
+
+            .main-menu {
+	        	&__trigger {
+	            		display: block;
+	            	}
+
+				&__item {
+					display: block;
+					width: 100%;
+					height: 45px;
+					padding-left: 30px;
+					padding-bottom:  0px;
+					border-bottom: 0.5px solid $gray-light;
+					font-weight: lighter;					
+					line-height: 45px;
+					background-color: #fff;					
+				}
+
+				.shop-cart {
+					position: absolute;
+					top: 40px;
+					right: 35px;
+					i {
+						font-size: 1.5rem;
+					}
+				}
+
+				&>ul:nth-child(1) {
+					color: inherit;
+	        		width: 100%;
+	        		position: absolute;
+	        		top: 100%;
+	        		left: 0;
+	        		display: none;
+                }
+			}
+
+			.main-menu__item:hover, .dropdown-menu__item:hover,
+			.dropright-menu__item:hover {	
+				height: auto;			
+				color: $primary-color;
+			}
+
+			.main-menu__item:hover .dropdown-menu__item:first-child,
+			.dropdown-menu__item:hover .dropright-menu__item:first-child {
+				border-top: 0.5px solid $primary-color;
+			}
+
+			#main-menu__checkbox:checked~nav[role="navigation"].main-menu
+			ul:nth-child(1){				
+				display: block;
+			}            
+
+			.dropdown-menu, .dropright-menu {
+			    border: none;	        
+	            background-color: #fff;
+	            width: 100%;
+	            position: static;
+	        }
+
+	        .dropdown-menu__item, .dropright-menu__item {          
+	            color: #666;         
+	            font-size: 0.65rem;
+	            border-bottom: 0.5px solid $gray-light;
+	            &:hover {
+	                background-color: #fff;
+	            }
+	        }
+
+	        .dropdown-menu__item:last-child,
+	        .dropright-menu__item:last-child {
+	        	border-bottom: none;
+	        }            
+		}
+		
+		.wrapper_1 {
+			justify-content: center;
+		}
+
+		.wrapper_1 .container__item {
+			flex: 0 0 360px;
+		}
+
+		.wrapper_1 .container__item:nth-of-type(2) {
+			flex-basis: 100%;
+			margin-bottom: 50px;		
+		}
+	}
+
+	#our-menu {
+
+		.tab-content {
+			width: 600px;
+		}
+		
+		.embed-item { 
+	        width: 600px;
+	    }
+
+		.wrapper_1 {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.left_bg, .right_bg1, .right_bg2 {
+			display: none;
+		}
+
+    }
+
+	.footer-info {
+
+		.column {
+			flex-basis: 48%;
+		}
+
+		.photo {
+	   		height: 75px;
+	   		flex-basis: 75px;
+	    }
+	}
+}
+/*iPad */
+@media only screen and (max-width: 768px)
+{
+	h1 {
+		font-size: 40px;
+	}
+
+	.container__item {
+		flex-basis: 100%;
+	}
+
+	.wrapper_1 .container__item {
+			flex: 0 0 100%;
+			min-height: 450px;
+	}
+
+	.wrapper_2 {  
+		flex-wrap: wrap;
+	}
+
+	.wrapper_2 .container__item {
+		margin-bottom: 50px;
+	}	
+
+	.wrapper_2 .container__item:last-child {
+		margin-bottom: 0px;
+	}
+	
+
+	#reservation-section {
+
+		.reserv-form {
+			&__row {
+				flex-wrap: wrap;
+			}
+			&__field {
+				flex: 0 1 100%;
+				margin-right: 0px;
+			}
+		}
+	}
+
+	#our-menu {
+
+		.embed-item { 
+	        width: 550px;
+	    }
+
+		.tab-content {
+			width: 550px;
+
+			.slide {
+				&__desc {
+					width: 230px;
+					height: 100px;
+					top: 20px;
+					right: 10px;
+
+					.text {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.tab-menu {
+			flex: 0 0 100%;
+			justify-content: center;
+			margin: 30px 0px;			
+		}
+    }
+
+    .footer-info {
+    	.column {
+    		flex-basis: 100%;
+    	}
+    }
+}
+
+/*Medium Smart Phones*/
+@media only screen and (max-width: 576px)
+{
+	#welcome-section {
+
+		.home-header {
+
+			.main-logo {
+				order: 1;
+			}
+
+			.main-menu {
+				&__trigger {
+					order: 2;
+				}
+			}
+						
+			.shop-cart {
+				display: none;
+			}
+
+			.text1, .text2, .text3 {
+				font-size: 2rem;
+			}
+
+			.welcome-text {
+				flex-basis: 80%;
+				font-size: 1.55rem;
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+
+			.small-logo {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}	
+		}
+
+		.wrapper_1 .img-responsive {
+			width: 100%;
+		}
+
+		.wrapper_1 .container__item:nth-of-type(2) {
+			padding: 30px 0px 50px;
+		}
+
+		.bg-theme {
+			background-size: contain;
+			height: 500px;
+		}
+
+		.column-wrapper {
+			flex: 0 0 90%;
+			* {
+				text-align: center;
+			}
+		}	
+	}
+
+	#reservation-section {
+
+		.reserv-form {
+			&__row {
+				flex-flow: row wrap;
+			}
+			&__field {
+				flex: 1 1 250px;
+			}
+		}
+	}
+
+	#our-menu {
+
+		.tab-content, .embed-item {
+			width: 420px;			
+		}
+
+		.text-block {
+			flex: 1 0 400px;
+		}
+
+	    .text-block {
+	    	margin-top: 30px;
+	    }		
+	}
+
+	#latest_news {
+		.wrapper_2 .container__item {
+			margin-bottom: 50px;
+		}	
+		.wrapper_2 .container__item:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
